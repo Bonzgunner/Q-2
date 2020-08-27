@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script>
+   var i=0;
+   var images=[];
+   
+   images[0]='beach.jpg';
+   images[1]='pic1.jpeg';
+   images[2]='pic3.jpeg';
+
+   function changeimg(){
+   				document.slide.src=images[i];
+   				
+   				if(i<images.length - 1){
+   								i++;
+   								}
+   				else{
+   								i=0;
+   								}
+   		setTimeout("changeimg()",6000);
+   				}
+   window.onload=changeimg;
+ </script>
+ 
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="nav-container">
+        <h1 class="nav1"><span class="spa">Travel </span>and Tour </h1>
+    <div class="nav2"><a href="home.html">HOME</a>
+    <a href="https://www.focustravel.in/about.html">ABOUT</a>
+    <a href="https://www.focustravel.in/about.html">SERVICE</a>
+    </div>
+ </div>
+ 
+<div class="flex-container">
+   <div class="flex1">
+   </div>
+   <div class="flex2">
+       <h1>Blogs</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</p>
+     </div>
+  </div>  
+      
+  <div class="search">
+    <h1 class="btm1"><span class="spa">Enter</span> Your Destination </h1>
+    <input class="input" type="text" style ="height:26px">
+    <button class ="btn" type="submit"><a href="https://www.google.com">SERACH</a></button>
+    </div>
+    
+ <div class="slider">
+    <img class="s1"name="slide" width="400" height ="200">
+    <a class="s2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</a>
+ </div> 
+   
+   <div class="bottom">
+   <h4> Travel Agency, ashegr@gmail.com</h4>
+   </div>
+   
+   <div class="about">
+   <h1>Know About us</h1>
+   <h3 class="about1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</h3>
+ <h1> Services</h1>
+     <h3 class="about1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</h3>
+ <h1> Journeys</h1>
+     <h3 class="about1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</h3>
+ </div>
+ 
+</body>
+</html>
